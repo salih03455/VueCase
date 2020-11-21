@@ -1,18 +1,53 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <span>Home Page</span>
+    <hr>
+    <!-- <map-location-selector
+      :latitude="this.latitude"
+      :longitude="this.longitude"
+      @locationUpdated="locationUpdated">
+    </map-location-selector> -->
+    <hr>
+    <input type="text" v-model="searchKey">
+    <input type="button" value="Is Ara" @click="search">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import MapLocationSelector from '../../node_modules/vue-google-maps-location-selector/src/GoogleMapsLocationSelector';
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      searchKey: '',
+      apiUrl: 'https://api.indeed.com/ads/apisearch',
+      publisher: '',
+      latitude: 1,
+      longitude: 2
+    }
+  },
+  methods: {
+    search() {
+      console.log(this.searchKey);
+      // is ilani listesini getir:
+      fetch('api/JobList.json')
+      .then(response => {
+        return response.json()
+      })
+      .then(function(json) {
+        const jobList = json.result.items;
+        // is ilani listesini 'state'ye kaydet:
+        
+      })
+      .catch(error => {
+        console.log('Request failed', error)
+      })
+    },
+    locationUpdated(latlng) {
+      this.latitude = latlng.lat;
+      this.longitude = latlng.lng;
+    }
   }
 }
 </script>
