@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <Header />
-    <transition name="slide" mode="out-in">
-      <router-view/>
-    </transition>
+    <div class="content">
+      <transition name="slide" mode="out-in">
+        <router-view/>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -14,7 +16,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -29,6 +30,12 @@
       color: #42b983;
     }
   }
+}
+
+.content {
+  width: 640px;
+  margin: auto;
+  max-width: 100%;
 }
 
 .slide-enter {

@@ -14,6 +14,11 @@ export default new Vuex.Store({
   },
   actions: {
   },
+  getters: {
+    getJobList(state) {
+      return state.jobList
+    }
+  },
   modules: {
   }
 })
