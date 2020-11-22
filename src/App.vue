@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <router-view/>
+    <transition name="slide" mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -26,6 +28,35 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+
+.slide-enter {
+  opacity: 0;
+}
+.slide-enter-active {
+  animation: slide-in .3s ease-out forwards;
+  transition: opacity .3s;
+}
+.slide-leave-active {
+  animation: slide-out .3s ease-out forwards;
+  transition: opacity  .3s;
+  opacity: 0;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0); 
+  }
+}
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
   }
 }
 </style>

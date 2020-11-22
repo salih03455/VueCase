@@ -33,8 +33,8 @@ export default {
       .then(response => {
         return response.json()
       })
-      .then(json => {
-        const jobList = json.result.items;
+      .then(response => {
+        const jobList = response.result.items;
         
         if (!this.searchKey && !this.searchLocation) {
           // hicbir sey girilmemisse:
@@ -57,8 +57,8 @@ export default {
           })
         }
       })
-      .then(jobL => {
-        return jobL.map(job => {
+      .then(jobList => {
+        return jobList.map(job => {
           if (this.searchKey && job.positionName.indexOf(this.searchKey) > -1) {
             const bold = job.positionName.replace(this.searchKey, `<b>${this.searchKey}</b>`)
             job.positionName = bold
@@ -78,11 +78,10 @@ export default {
           return job
         })
       })
-      .then(jobLs => {
-        // console.log('job l: ', jobL)
-
+      .then(jobList => {
         // is ilani listesini 'state'ye kaydet:
-        this.$store.commit('updateJobList', jobLs)
+        this.$store.commit('updateJobList', jobList)
+      }).then(() => {
         // '/joblist'e git:
         this.$router.push('/joblist')
       })
