@@ -4,17 +4,43 @@
   "result": {
     "items": [
       {
-        "jobId": "C71CD1954BA149BCAF42B25F775EA4FB",
-        "positionName": "Gerber Operatörü",
-        "companyName": "Testoğlu Lahmacun Pide Ve Kebap",
+        "jobId": "C71CD1954BA149BCAF42B25F775EA4FA",
+        "positionName": "Gerber Operatörü-1",
+        "companyName": "Testoğlu Lahmacun Pide Ve Kebap-1",
         "durationDay": 0,
-        "durationDayText": "Taze çıktı!",
+        "durationDayText": "Taze çıktı!-1",
         "imageUrl": "http://localhost/bluecollar/Company/Job/000/000/000/avatar/13920170713010155805.jpg",
-        "distance": "8,53 km yakınında",
+        "distance": "8,53 km yakınında-1",
         "latitude": 41.050968170166023,
         "longitude": 29.062856674194339,
-        "cityName": "İstanbul",
-        "townName": "Çengelköy Mahallesi"
+        "cityName": "Istanbul-1",
+        "townName": "Çengelköy Mahallesi-1"
+      },
+      {
+        "jobId": "C71CD1954BA149BCAF42B25F775EA4FB",
+        "positionName": "Gerber Operatörü-2",
+        "companyName": "Testoğlu Lahmacun Pide Ve Kebap-2",
+        "durationDay": 0,
+        "durationDayText": "Taze çıktı!-2",
+        "imageUrl": "http://localhost/bluecollar/Company/Job/000/000/000/avatar/13920170713010155805.jpg",
+        "distance": "8,53 km yakınında-2",
+        "latitude": 41.050968170166023,
+        "longitude": 29.062856674194339,
+        "cityName": "Ankara-2",
+        "townName": "Çengelköy Mahallesi-2"
+      },
+      {
+        "jobId": "C71CD1954BA149BCAF42B25F775EA4FC",
+        "positionName": "Deve Operatörü-3",
+        "companyName": "Testoğlu Lahmacun Pide Ve Kebap-3",
+        "durationDay": 0,
+        "durationDayText": "Taze çıktı!-3",
+        "imageUrl": "http://localhost/bluecollar/Company/Job/000/000/000/avatar/13920170713010155805.jpg",
+        "distance": "8,53 km yakınında-3",
+        "latitude": 41.050968170166023,
+        "longitude": 29.062856674194339,
+        "cityName": "Istanbul-3",
+        "townName": "Çengelköy Mahallesi-3"
       }
     ],
     "total": 1

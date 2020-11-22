@@ -5,9 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    
+    jobList: []
   },
   mutations: {
+    updateJobList(state, value) {
+      state.jobList = [...value];
+    }
   },
   actions: {
   },
