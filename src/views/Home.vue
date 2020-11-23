@@ -1,23 +1,38 @@
 <template>
   <div class="home">
-    <span>Home Page</span>
-    <hr>
-    <!-- <map-location-selector
-      :latitude="this.latitude"
-      :longitude="this.longitude"
-      @locationUpdated="locationUpdated">
-    </map-location-selector> -->
     <div class="search">
-      <input type="text" placeholder="Pozisyon veya Şirket Adı" v-model="searchKey">
-      <input type="text" placeholder="Konum" v-model="searchLocation">
-      <input type="button" value="Ara" @click="search">
+      <span class="search-title">Arama yapmak istediginiz kelimeyi giriniz...</span>
+      <form class="search-content" @submit.prevent="search">
+        <input type="text" placeholder="Pozisyon veya Şirket Adı" v-model="searchKey">
+        <input type="text" placeholder="Konum" v-model="searchLocation">
+        <input type="submit" value="Ara">
+      </form>
     </div>
+    <img src="@/assets/images/jobsearch.jpg" alt="Job Search Image">
   </div>
 </template>
 
-<script>
-// import MapLocationSelector from '../../node_modules/vue-google-maps-location-selector/src/GoogleMapsLocationSelector';
+<style lang="scss">
+  .home {
+    .search {
+      &-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      &-content {
+        padding: 10px 0 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    img {
+      border-radius: 100%;
+    }
+  }
+</style>
 
+<script>
 export default {
   name: 'Home',
   data() {
@@ -81,6 +96,9 @@ export default {
       .then(jobList => {
         // is ilani listesini 'state'ye kaydet:
         this.$store.commit('updateJobList', jobList)
+        // arama kelimelerini 'state'ye kaydet:
+        this.$store.commit('updateSearchKey', this.searchKey)
+        this.$store.commit('updateSearchLocation', this.searchLocation)
       }).then(() => {
         // '/joblist'e git:
         this.$router.push('/joblist')
