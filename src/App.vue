@@ -6,6 +6,7 @@
         <router-view/>
       </transition>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -20,8 +21,8 @@
 }
 
 .content {
-  width: 640px;
-  padding: 60px 0;
+  width: 660px;
+  padding: 60px 10px;
   margin: auto;
   max-width: 100%;
 }
@@ -58,11 +59,13 @@
 
 <script>
 import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

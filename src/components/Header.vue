@@ -13,14 +13,25 @@
 		background: $darkColor;
 		padding: 2px 10px 0;
 		display: flex;
+		a {
+			opacity: .3;
+		}
 		h1 {
 			color: #fff;
-			line-height: 20px;
+			line-height: 15px;
 		}
 		span {
 			background: yellow;
 			padding: 0 2px;
-			font-size: 13px;
+			font-size: 11px;
+			line-height: 12px;
+			display: inline-block;
 		}
 	}
 </style>
+
+<script>
+export default {
+	name: 'Header'
+}
+</script>

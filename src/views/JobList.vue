@@ -3,19 +3,23 @@
     <div class="job-list-description">
       <div><span>Arama Sonuçları:</span></div>
       <span v-if="searchKey">
-        <span>Pozisyon veya Şirket Adı:</span> <b>{{ searchKey }}</b>
+        <span>Pozisyon veya Şirket Adı:</span> <i>{{ searchKey }}</i>
       </span>
       <span v-if="searchLocation">
-        <span>Konum:</span> <b>{{ searchLocation }}</b>
+        <span>Konum:</span> <i>{{ searchLocation }}</i>
       </span>
     </div>
-    <div class="job-list-content">
+    <div v-if="jobList.length" class="job-list-content">
       <div class="job" v-for="job in jobList" :key="job.jobId">
-        <router-link :to="{ path: `/jobdetail/${job.jobId}` }">
+        <a @click.prevent="fetchJobDetail(job.jobId)">
           <div class="job-position" v-html="job.positionName"></div>
           <div class="job-company" v-html="job.companyName"></div>
-        </router-link>
+        </a>
       </div>
+    </div>
+    <div v-else class="job-list-empty">
+      <img src="@/assets/images/empty-state.jpg" alt="Empty State">
+      <span>Hiç sonuç bulunamadı...</span>
     </div>
   </div>
 </template>
@@ -29,7 +33,6 @@
         margin-bottom: 5px;
         span {
           border-bottom: 2px solid $mainColor;
-
         }
       }
       & > span {
@@ -39,6 +42,19 @@
           display: inline-block;
           margin-right: 2px;
         }
+        i {
+          background-color: yellow;
+        }
+      }
+    }
+    &-empty {
+      text-align: center;
+      img {
+        width: 180px;
+        margin: 100px auto 30px;
+      }
+      span {
+        font-size: 20px;
       }
     }
   }
@@ -52,6 +68,7 @@
     a {
       display: block;
       padding: 15px;
+      cursor: pointer;
     }
     &:hover {
       background: $mainColor;
@@ -80,6 +97,12 @@ export default {
       this.$router.push('/')
     } else {
       this.jobList = this.$store.getters.getJobList
+    }
+  },
+  methods: {
+    fetchJobDetail(jobId) {
+      this.$store.dispatch('fetchJobDetail', jobId)
+      this.$router.push(`/jobdetail/${jobId}`)
     }
   }
 }

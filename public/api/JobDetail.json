@@ -1,29 +1,81 @@
 {
   "version": "1.0",
   "statusCode": 200,
-  "result": {
-    "jobId": "199A9ED66BFE4CF593DBDF5402F1702A",
-    "positionName": "Jandarma Bölge Komutanı",
-    "companyName": "Vosyoyvsyvosyv",
-    "durationDay": 0,
-    "durationDayText": "Taze çıktı!",
-    "imageUrl": "https://localhost/bluecollar/company/job/Default/6.jpg",
-    "countryCode": "TR",
-    "countryName": "Turkey",
-    "cityName": "İstanbul",
-    "townName": "Ümraniye",
-    "address": "Saray Mahallesi Site Yolu Sokak No:7 34768 Ümraniye/İstanbul Turkey",
-    "postalCode": 34768,
-    "hasLatitude": true,
-    "hasLongitude": true,
-    "latitude": 41.0266502,
-    "longitude": 29.1157803,
-    "description": "syovsvyosvyoyvsoby",
-    "status": 1,
-    "contactPhone": {
-      "countryCallingCode": "+90",
-      "areaCode": "879",
-      "number": "9797979"
+  "results": [
+    {
+      "jobId": "C71CD1954BA149BCAF42B25F775EA4FA",
+      "positionName": "jandarma bölge komutanı-1",
+      "companyName": "Vosyoyvsyvosyv",
+      "durationDay": 0,
+      "durationDayText": "Taze çıktı!",
+      "imageUrl": "https://via.placeholder.com/100x100",
+      "countryCode": "TR",
+      "countryName": "Turkey",
+      "cityName": "istanbul",
+      "townName": "kartal",
+      "address": "Saray Mahallesi Site Yolu Sokak No:7 34768 Ümraniye/İstanbul Turkey (1)",
+      "postalCode": 34768,
+      "hasLatitude": true,
+      "hasLongitude": true,
+      "latitude": 41.0266502,
+      "longitude": 29.1157803,
+      "description": "syovsvyosvyoyvsoby-1",
+      "status": 1,
+      "contactPhone": {
+        "countryCallingCode": "+90",
+        "areaCode": "879",
+        "number": "5445"
+      }
+    },
+    {
+      "jobId": "C71CD1954BA149BCAF42B25F775EA4FB",
+      "positionName": "jandarma bölge komutanı-2",
+      "companyName": "Vosyoyvsyvosyv",
+      "durationDay": 0,
+      "durationDayText": "Taze çıktı!",
+      "imageUrl": "https://via.placeholder.com/100x100",
+      "countryCode": "TR",
+      "countryName": "Turkey",
+      "cityName": "İstanbul",
+      "townName": "Ümraniye",
+      "address": "Saray Mahallesi Site Yolu Sokak No:7 34768 Ümraniye/İstanbul Turkey (2)",
+      "postalCode": 34768,
+      "hasLatitude": true,
+      "hasLongitude": true,
+      "latitude": 41.0266502,
+      "longitude": 29.1157803,
+      "description": "syovsvyosvyoyvsoby-2",
+      "status": 1,
+      "contactPhone": {
+        "countryCallingCode": "+90",
+        "areaCode": "879",
+        "number": "5449"
+      }
+    },
+    {
+      "jobId": "C71CD1954BA149BCAF42B25F775EA4FC",
+      "positionName": "jandarma bölge komutanı-3",
+      "companyName": "Vosyoyvsyvosyv",
+      "durationDay": 0,
+      "durationDayText": "Taze çıktı!",
+      "imageUrl": "https://via.placeholder.com/100x100",
+      "countryCode": "TR",
+      "countryName": "Turkey",
+      "cityName": "İstanbul",
+      "townName": "Aksaray",
+      "address": "Saray Mahallesi Site Yolu Sokak No:7 34768 Ümraniye/İstanbul Turkey (3)",
+      "postalCode": 34768,
+      "hasLatitude": true,
+      "hasLongitude": true,
+      "latitude": 41.0266502,
+      "longitude": 29.1157803,
+      "description": "syovsvyosvyoyvsoby-3",
+      "status": 1,
+      "contactPhone": {
+        "countryCallingCode": "+90",
+        "areaCode": "879",
+        "number": "5447"
+      }
     }
-  }
+  ]
 }

@@ -30,6 +30,15 @@
       border-radius: 100%;
     }
   }
+  @media (max-width: 768px) {
+    .search-content {
+      flex-direction: column;
+      input {
+        width: 100%;
+      margin-bottom: 10px;
+      }
+    }  
+  }
 </style>
 
 <script>
@@ -106,10 +115,6 @@ export default {
       .catch(error => {
         console.log('Request failed', error)
       })
-    },
-    locationUpdated(latlng) {
-      this.latitude = latlng.lat;
-      this.longitude = latlng.lng;
     }
   }
 }

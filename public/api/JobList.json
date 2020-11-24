@@ -5,42 +5,39 @@
     "items": [
       {
         "jobId": "C71CD1954BA149BCAF42B25F775EA4FA",
-        "positionName": "Gerber Operatörü-1",
-        "companyName": "Testoğlu Lahmacun Pide Ve Kebap-1",
+        "positionName": "gerber operatörü-1",
+        "companyName": "testoğlu lahmacun pide ve kebap-1",
         "durationDay": 0,
-        "durationDayText": "Taze çıktı!-1",
-        "imageUrl": "https://via.placeholder.com/100x100",
+        "durationDayText": "taze çıktı!-1",
         "distance": "8,53 km yakınında-1",
         "latitude": 41.050968170166023,
         "longitude": 29.062856674194339,
-        "cityName": "Istanbul-1",
-        "townName": "Çengelköy Mahallesi-1"
+        "cityName": "istanbul-1",
+        "townName": "çengelköy mahallesi-1"
       },
       {
         "jobId": "C71CD1954BA149BCAF42B25F775EA4FB",
-        "positionName": "Gerber Operatörü-2",
-        "companyName": "Testoğlu Lahmacun Pide Ve Kebap-2",
+        "positionName": "gerber operatörü-2",
+        "companyName": "testoğlu lahmacun pide ve kebap-2",
         "durationDay": 0,
-        "durationDayText": "Taze çıktı!-2",
-        "imageUrl": "https://via.placeholder.com/100x100",
+        "durationDayText": "taze çıktı!-2",
         "distance": "8,53 km yakınında-2",
         "latitude": 41.050968170166023,
         "longitude": 29.062856674194339,
-        "cityName": "Ankara-2",
-        "townName": "Çengelköy Mahallesi-2"
+        "cityName": "ankara-2",
+        "townName": "çengelköy mahallesi-2"
       },
       {
         "jobId": "C71CD1954BA149BCAF42B25F775EA4FC",
-        "positionName": "Deve Operatörü-3",
-        "companyName": "Testoğlu Lahmacun Pide Ve Kebap-3",
+        "positionName": "at operatörü-3",
+        "companyName": "testoğlu lahmacun pide ve kebap-3",
         "durationDay": 0,
-        "durationDayText": "Taze çıktı!-3",
-        "imageUrl": "https://via.placeholder.com/100x100",
+        "durationDayText": "taze çıktı!-3",
         "distance": "8,53 km yakınında-3",
         "latitude": 41.050968170166023,
         "longitude": 29.062856674194339,
-        "cityName": "Istanbul-3",
-        "townName": "Çengelköy Mahallesi-3"
+        "cityName": "istanbul-3",
+        "townName": "çengelköy mahallesi-3"
       }
     ],
     "total": 1

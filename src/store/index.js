@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     jobList: [],
+    jobDetail: null,
     searchKey: '',
     searchLocation: ''
   },
@@ -18,13 +19,34 @@ export default new Vuex.Store({
     },
     updateSearchLocation(state, value) {
       state.searchLocation = value
+    },
+    updateJobDetail(state, value) {
+      state.jobDetail = {...value}
     }
   },
   actions: {
+    fetchJobDetail({ commit }, payload) {
+      fetch('api/JobDetail.json')
+      .then(job => {
+        return job.json()
+      })
+      .then(job => {
+        return job.results.filter(data => data.jobId === payload)[0]
+      })
+      .then(job => {
+        commit('updateJobDetail', job)
+      })
+      .catch(error => {
+        console.log('Request failed', error)
+      })
+    }
   },
   getters: {
     getJobList(state) {
       return state.jobList
+    },
+    getJobDetail(state) {
+      return state.jobDetail
     },
     getSearchKey(state) {
       return state.searchKey
