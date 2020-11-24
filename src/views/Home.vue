@@ -35,7 +35,7 @@
       flex-direction: column;
       input {
         width: 100%;
-      margin-bottom: 10px;
+        margin-bottom: 10px;
       }
     }  
   }

@@ -18,6 +18,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .content {
@@ -25,6 +28,7 @@
   padding: 60px 10px;
   margin: auto;
   max-width: 100%;
+  flex-grow: 1;
 }
 
 .slide-enter {

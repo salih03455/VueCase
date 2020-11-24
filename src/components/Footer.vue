@@ -6,15 +6,12 @@
 
 <style lang="scss">
 	.footer {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 30px;
+		padding-top: 20px;
 		p {
 			font-size: 12px;
 			text-align: center;
 			line-height: 30px;
+			margin: 0;
 		}
 	}
 </style>
